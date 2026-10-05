@@ -1,0 +1,9 @@
+{
+  "name": "seo-llmo",
+  "description": "第6章 SEO/LLMO を自動化する: SEO の入口（改善の全工程・サイト全体の監査・段の判定・週次の改善サイクル）と、テクニカル / コンテンツ / 被リンク / 計測の分類ごとの Skill、AI の回答での可視性と言及の計測。作業ごとの手順は各 SKILL.md の節にまとめてある",
+  "version": "0.2.0",
+  "license": "FSL-1.1-ALv2",
+  "author": {
+    "name": "tripclear"
+  }
+}

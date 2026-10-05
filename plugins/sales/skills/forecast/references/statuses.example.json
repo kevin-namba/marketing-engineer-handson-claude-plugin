@@ -1,0 +1,12 @@
+{
+  "_comment": "ステータス表の例。確度は一例なので、自社の実績から決め直す。SSOT は自社の設定 1 箇所に置き、このファイルは写しを作るための見本としてだけ使う。",
+  "statuses": [
+    {"id": "untouched", "label": "未接触", "probability": 0, "open": true},
+    {"id": "appointment", "label": "アポ獲得", "probability": 10, "open": true, "enter_when": "商談の日程が確定した"},
+    {"id": "considering", "label": "担当者検討", "probability": 25, "open": true, "enter_when": "提案を提示し先方社内で検討中"},
+    {"id": "champion", "label": "担当者合意", "probability": 50, "open": true, "enter_when": "担当者が導入意思を表明した"},
+    {"id": "decision", "label": "決裁者合意", "probability": 90, "open": true, "enter_when": "決裁ラインが合意した"},
+    {"id": "signed", "label": "締結", "probability": 100, "open": false},
+    {"id": "lost", "label": "保留・失注", "probability": 0, "open": false, "requires": "lost_reason"}
+  ]
+}

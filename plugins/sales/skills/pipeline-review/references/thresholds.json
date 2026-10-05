@@ -1,0 +1,18 @@
+{
+  "idle_days": 14,
+  "stuck_days": 30,
+  "single_thread_contacts": 1,
+  "prune_silent_days": 60,
+  "prune_postponed_count": 3,
+  "focus_count": 5,
+  "weights": {
+    "closeness": 30,
+    "size": 25,
+    "stage": 20,
+    "activity": 15,
+    "risk": 10
+  },
+  "closed_statuses": ["締結", "保留・失注", "失注", "保留", "解約済"],
+  "status_order": ["未接触", "アポ獲得", "担当者検討", "担当者合意", "決裁者合意"],
+  "size_bands": []
+}

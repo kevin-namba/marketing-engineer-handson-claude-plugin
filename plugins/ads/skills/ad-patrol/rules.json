@@ -1,0 +1,49 @@
+{
+  "_note": "ルールの例。enabled を false にしてある。自分の案件の値（閾値・対象の ID・上限・通知先）に書き換え、支出が増えるルールは人が内容を確かめて approved を書いてから true にする。書式は references/rule-format.md。",
+  "rules": [
+    {
+      "name": "CPA が目標の 2 倍を超えた広告セットを止める",
+      "enabled": false,
+      "media": "Meta",
+      "condition": {"kind": "広告の実績", "metric": "CPA", "comparison": "より大きい", "threshold": 8000},
+      "window_days": 7,
+      "min_spend": 10000,
+      "target": {"level": "広告セット", "ids": []},
+      "action": "停止する",
+      "cooldown_minutes": 1440,
+      "max_per_day": 3,
+      "notify": "広告の通知チャンネル"
+    },
+    {
+      "name": "撤退ラインの額を使って成果 0 件の広告セットを止める",
+      "enabled": false,
+      "media": "Meta",
+      "condition": {"kind": "広告の実績", "metric": "消化額", "comparison": "より大きい", "threshold": 8000},
+      "window_days": 7,
+      "min_spend": 8000,
+      "max_conversions": 0,
+      "target": {"level": "広告セット", "ids": []},
+      "action": "停止する",
+      "cooldown_minutes": 1440,
+      "max_per_day": 3,
+      "notify": "広告の通知チャンネル"
+    },
+    {
+      "name": "成果のついている広告セットの日予算を上げる",
+      "enabled": false,
+      "media": "Meta",
+      "condition": {"kind": "広告の実績", "metric": "CPA", "comparison": "より小さい", "threshold": 3000},
+      "window_days": 7,
+      "min_spend": 10000,
+      "min_conversions": 5,
+      "target": {"level": "広告セット", "ids": ["（承認した広告セットの ID）"]},
+      "action": "日予算を増やす",
+      "step_percent": 20,
+      "budget_min": 1500,
+      "budget_max": 3000,
+      "cooldown_minutes": 10080,
+      "max_per_day": 1,
+      "notify": "広告の通知チャンネル"
+    }
+  ]
+}

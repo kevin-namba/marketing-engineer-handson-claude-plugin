@@ -1,0 +1,22 @@
+{
+  "company_name": "{{未設定}}",
+  "postal_code": "{{未設定}}",
+  "address": "{{未設定}}",
+  "tel": "{{未設定}}",
+  "email": "{{未設定}}",
+  "invoice_number": "{{未設定}}",
+  "bank": {
+    "name": "",
+    "branch": "",
+    "account_type": "",
+    "account_number": "",
+    "account_holder": ""
+  },
+  "seal_image_path": "",
+  "default_remarks": "{{未設定}}",
+  "valid_days": 30,
+  "tax_rate": "0.10",
+  "tax_rounding": "round",
+  "number_prefix": "Q-",
+  "font": "游ゴシック"
+}

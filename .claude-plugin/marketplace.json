@@ -1,0 +1,41 @@
+{
+  "name": "marketing-engineer-handson",
+  "owner": {
+    "name": "tripclear"
+  },
+  "metadata": {
+    "description": "『マーケティングエンジニア入門』で扱う Skill を、章ごとの plugin にまとめたハンズオン用マーケットプレイス"
+  },
+  "plugins": [
+    {
+      "name": "strategy",
+      "source": "./plugins/strategy",
+      "description": "第3章 戦略設計を自動化する: ブランドナレッジの整理、3C・ポジショニング分析、媒体選定、テスト設計、チャネル横断の月次レビュー、ブランドリスニング、トレンド監視、情報収集のチャネルルーティング",
+      "version": "0.1.0"
+    },
+    {
+      "name": "creative",
+      "source": "./plugins/creative",
+      "description": "第4章 クリエイティブ作成を自動化する: オファー設計、広告コピー、バナー設計、リール台本と分解、絵コンテ、動画制作、LP の作成と改善",
+      "version": "0.1.0"
+    },
+    {
+      "name": "ads",
+      "source": "./plugins/ads",
+      "description": "第5章 広告運用を自動化する: 広告運用の全工程、キーワードの検索ボリューム、Meta 広告の API 操作と運用、CPA と予算の計画、週次のチューニングとレポート、見回り",
+      "version": "0.1.0"
+    },
+    {
+      "name": "seo-llmo",
+      "source": "./plugins/seo-llmo",
+      "description": "第6章 SEO/LLMO を自動化する: SEO の入口（改善の全工程・サイト全体の監査・段の判定・週次の改善サイクル）と、テクニカル / コンテンツ / 被リンク / 計測の分類ごとの Skill、AI の回答での可視性と言及の計測。作業ごとの手順は各 SKILL.md の節にまとめてある",
+      "version": "0.2.0"
+    },
+    {
+      "name": "sales",
+      "source": "./plugins/sales",
+      "description": "第9章 営業活動を自動化する: 見込み客の発見、企業調査、アウトリーチの下書き、商談準備と要約、提案、事例調査、見積、パイプラインレビュー、フォーキャスト、PR、イベント発掘",
+      "version": "0.1.0"
+    }
+  ]
+}

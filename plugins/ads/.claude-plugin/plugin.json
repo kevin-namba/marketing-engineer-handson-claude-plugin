@@ -1,0 +1,9 @@
+{
+  "name": "ads",
+  "description": "第5章 広告運用を自動化する: 広告運用の全工程、キーワードの検索ボリューム、Meta 広告の API 操作と運用、CPA と予算の計画、週次のチューニングとレポート、見回り",
+  "version": "0.1.0",
+  "license": "FSL-1.1-ALv2",
+  "author": {
+    "name": "tripclear"
+  }
+}
