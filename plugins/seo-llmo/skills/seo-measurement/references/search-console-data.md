@@ -51,9 +51,9 @@
 |---|---|
 | `GET https://www.googleapis.com/webmasters/v3/sites` | プロパティの一覧（`siteUrl` と `permissionLevel`） |
 | `GET https://www.googleapis.com/webmasters/v3/sites/{siteUrl}/sitemaps` | サイトマップの一覧。示すのは送信した件数 |
-| `PUT` / `DELETE` `…/sitemaps/{feedpath}` | 送信 / 削除。**外部反映。人の確認を通す** |
+| `PUT` / `DELETE` `…/sitemaps/{feedpath}` | 送信 / 削除。**外部反映。この Skill では呼ばない** |
 
-送信の成功は「受理された」まで。失敗しても自動で送り直さない（理由を読んで報告する）。
+送信と送信後の確認は `seo-technical` の「サイトマップ」の節（`references/sitemap-submit.md`）で行う。
 
 ## 取れないときの切り分け
 
