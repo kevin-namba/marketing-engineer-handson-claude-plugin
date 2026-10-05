@@ -4,7 +4,7 @@ description: >-
   静止画バナーの構成を設計し、画像化と検品まで行う。要素の洗い出し → 構成の型 → JSON の設計書 →
   生成 AI か HTML かの選択 → 画像 → 全文字の読み合わせ、の順で進める。
   「バナーを作って」「バナーの構成案」「クリエイティブを差し替えたい」「バナーのサイズ展開」で使う。
-  ※文言は ad-copy、画像化の実行は image-video-gen、入稿は媒体の Skill（第 5 章。meta-ads-api ほか）、動画は reel-script / storyboard。
+  ※文言は ad-copy、画像化の実行は image-video-gen、入稿は媒体の Skill（第 5 章。meta-ads-playbook ほか）、動画は reel-script / storyboard。
   **設計だけで止めない**。生成の API キーが無くても画像までは作れる（HTML で組む）。
 ---
 

@@ -27,7 +27,7 @@ notes: 取れなかった項目とその理由
 - 取れなかった項目は推測で埋めず「未取得」と書く。Instagram と TikTok のページは開かない（アカウントの有無は検索結果で確かめる）。
 ```
 
-`recent_fact` は、文面の書き出しの根拠（`outreach-copy` の入力 CSV の `research_notes` 列）になる。
+`recent_fact` は、文面の書き出しの根拠（`outreach-draft` の一括生成の入力 CSV の `research_notes` 列）になる。
 出典の URL が無い行は根拠に使わない。
 
 ## 埋まらない属性の扱い

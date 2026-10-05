@@ -5,7 +5,7 @@ description: >-
   根拠付きのリード一覧と返信の下書きを作る。
   「見込み客を探して」「リードリストを作って」「競合に不満を持ってる人」「〇〇を探してる人いない？」で使う。
   定期実行の中身にもなる。
-  ※1 社の深掘りは company-brief、公募・入札の巡回は tender-scouting、営業文面は outreach-draft / outreach-copy。
+  ※1 社の深掘りは company-brief、公募・入札の巡回は tender-scouting、営業文面は outreach-draft。
   送信（返信・DM・メール）はこの Skill では行わない。
 ---
 

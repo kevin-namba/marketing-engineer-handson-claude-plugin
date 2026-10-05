@@ -1,6 +1,6 @@
 # 入力の列と設定
 
-`scripts/pipeline_flags.py` が読む CSV の仕様。pipeline-review・forecast・daily-briefing で同じ案件表を使う。
+`scripts/pipeline_flags.py` と `scripts/weighted_forecast.py` が読む CSV の仕様。pipeline-review（週次のレビューと売上予測）と daily-briefing で同じ案件表を使う。
 
 ## 列
 
@@ -11,7 +11,7 @@
 | name（必須） | 案件名 / 企業名 / 会社名 / 商談名 | エラー |
 | status（必須） | ステータス / ステージ | エラー |
 | amount | 金額 / 月額 | 規模は 0 として並べ、形状では「金額が空」に入れる |
-| term_months | 契約期間 / 期間 | forecast だけが使う |
+| term_months | 契約期間 / 期間 | 売上予測だけが使う |
 | target_month | 成約予定 / 獲得目標月 | 期日超過は判定せず「未設定」 |
 | owner | 担当者 | 衛生の対象から外す |
 | next_action | 次アクション / ネクストアクション | 衛生の対象から外す |
@@ -25,7 +25,7 @@
 - 日付は `YYYY-MM-DD`（`YYYY/MM/DD` も読む）。成約予定は `YYYY-MM` まで読む
 - 金額は数字以外の文字（¥・カンマ・「円」）を取り除いて読む。「30万」のような略記は読めないので、数字に直してから渡す
 - 列そのものが無い場合は「未取得」、列はあるがその案件だけ空の場合は「衛生」のフラグになる
-- forecast は任意で commit / コミット列（yes・no）も読む
+- 売上予測は任意で commit / コミット列（yes・no）も読む
 
 ## 設定の変え方
 

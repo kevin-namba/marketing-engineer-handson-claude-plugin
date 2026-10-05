@@ -1,6 +1,6 @@
 # LP の HTML の骨組み
 
-外部のライブラリに頼らない最小の形。計測タグと JavaScript は lp-measurement-tags の `references/tag-snippets.md` から入れる。
+外部のライブラリに頼らない最小の形。計測タグと JavaScript は `tag-snippets.md`（同じフォルダ）から入れる。
 
 - 差し替える箇所は `<!-- lp:名前 -->…<!-- /lp:名前 -->` で囲む。計測する区画には `data-section="<区画の名前>"` を付ける（名前は LP をまたいで固定する）
 - 画像は `width` / `height` を明示し、ファーストビュー以外は `loading="lazy"`。外部のフォントや大きな画像を積まない
@@ -17,7 +17,7 @@
 <meta property="og:title" content="…">
 <meta property="og:description" content="…">
 <meta property="og:image" content="assets/ogp.png">
-<!-- TODO: 計測未設定（GTM / GA4 / Meta の ID を受け取ったら lp-measurement-tags の手順で入れる） -->
+<!-- TODO: 計測未設定（GTM / GA4 / Meta の ID を受け取ったら landing-page-builder の「計測タグを入れる・確かめる」の手順で入れる） -->
 <style>
   body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.7; padding-bottom: 72px; }
   .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px; background: #fff; }
@@ -50,7 +50,7 @@
 <div class="sticky-cta"><a class="btn" href="#form" data-cv="cta_click" data-position="sticky">空き枠を見る</a></div>
 <script>
   // VARIANT・trackCv・隠し項目への引き継ぎ・イベントの送信を、ここに入れる
-  // （lp-measurement-tags の references/tag-snippets.md の「共通」と、入れ方 A / B / C の trackCv）
+  // （tag-snippets.md の「共通」と、入れ方 A / B / C の trackCv）
 </script>
 </body>
 </html>
